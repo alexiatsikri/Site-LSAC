@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<nav>           
+    <img class="logo" src="logo_nav.png" alt="logo">
+    <ul>
+        <li >
+            <a class="btn-log" href="#">Logare</a>
+            <a class="btn-creare" href="#">Creare cont</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="overlay">
+    <div class="wrapper">
+        <a href="#" class="close">&times;</a>
+        <div class="column">
+            <div class="signin">
+                <h1>Welcome Back</h1>
+                <input type="username" placeholder="username">
+                <input type="password" placeholder="parola">
+                <button class="pop1sub">Logare</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="landing">
+    <div class="intro1">
+        <h1>
+            <span class="Partajarea">Partajarea de meme-uri nu a <br />fost niciodată mai simplă!</span><br />
+        </h1>
+    </div>
+    <div class="intro2">
+        <p>
+            <span class="Platforma">
+            Platforma ideală pentru studenții de la Politehnică, <br />
+            amuzați de câte materii o să pice semestrul asta.</span>
+        </p>
+       
+    </div>
+    <div class="btn-upload">
+        <a class="text-dark bg-transparent"  href="#Formular">Upload a MEME</a>
+    </div>
+    <img class="poza_land" src="poza_land.png">
+</section>
+
+<div class="mov">
+    <a name="Formular"></a>
+</div>
+
+<div class="dreptalb">
+    <div class="mij1">
+        <h1>
+            <span class="Ai">
+                Ai tupeu și crezi că ești<br /> amuzant?<br />
+            </span>
+        </h1>
+    </div>
+    <div class="mij2">
+        <p>
+            <span class="trimite">
+                Trimite-ne un mail și poate ai<br /> noroc să ne apuce râsul când îți<br /> vedem meme-ul.
+            </span>
+        </p>
+    </div>
+
+    <form action="upload.php" method="POST">
+        <input type="file" multiple>
+        <p>Drag and drop image or click to upload</p>
+        <button type="submit">Trimite</button>
+    </form>
+</div>
+
+<div class="Most">
+    <p>Most Viewed</p>  
+</div>
+
+<img class="image1" src="image1.png">    
+<img class="image2" src="image2.png">   
+<img class="image3"src="image3.png">
+
+<footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+           
+            <div class="footer-social">
+                <a href="https://www.instagram.com/lsacbucuresti/">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8818 13.2464C16.8818 10.8877 15.0032 9.00075 12.655 9.00075C10.3067 9.00075 8.42815 10.8877 8.42815 13.2464C8.42815 15.6051 10.3067 17.4921 12.655 17.4921C15.0032 17.4921 16.8818 15.6051 16.8818 13.2464ZM19.0735 13.2464C19.0735 16.8631 16.2556 19.6935 12.655 19.6935C9.05435 19.6935 6.23645 16.8631 6.23645 13.2464C6.23645 9.62973 9.05435 6.7993 12.655 6.7993C16.2556 6.7993 19.0735 9.62973 19.0735 13.2464ZM20.7956 6.4848C20.7956 7.42828 20.1694 8.05727 19.2301 8.05727C18.2908 8.05727 17.6646 7.42828 17.6646 6.4848C17.6646 5.54132 18.2908 4.91234 19.2301 4.91234C20.1694 4.91234 20.7956 5.69857 20.7956 6.4848ZM12.655 2.86814C10.7764 2.86814 6.86265 2.71089 5.29715 3.33988C4.2013 3.81161 3.262 4.75509 2.9489 5.85582C2.3227 7.42828 2.47925 11.3594 2.47925 13.2464C2.47925 15.1334 2.3227 19.0645 2.9489 20.637C3.262 21.7377 4.2013 22.6812 5.29715 22.9957C6.86265 23.6247 10.9329 23.4674 12.655 23.4674C14.377 23.4674 18.4473 23.6247 20.0128 22.9957C21.1087 22.5239 21.8914 21.7377 22.3611 20.637C22.9873 18.9073 22.8307 14.9761 22.8307 13.2464C22.8307 11.5167 22.9873 7.42828 22.3611 5.85582C22.048 4.75509 21.1087 3.81161 20.0128 3.49712C18.4473 2.71089 14.5336 2.86814 12.655 2.86814ZM25.179 13.2464V18.4355C25.179 20.3225 24.5528 22.2094 23.1439 23.7819C21.7349 25.1971 19.8563 25.8261 17.8211 25.8261H7.48885C5.61025 25.8261 3.73165 25.1971 2.16615 23.7819C0.913747 22.3667 0.130997 20.4797 0.130997 18.4355V13.2464V8.05727C0.130997 6.01306 0.913747 4.12611 2.16615 2.71089C3.73165 1.45292 5.61025 0.666687 7.48885 0.666687H17.8211C19.6997 0.666687 21.5784 1.29567 23.1439 2.71089C24.3962 4.12611 25.179 6.01306 25.179 8.05727V13.2464Z" fill="white"/>
+                </svg>
+                </a>
+                <a href="https://www.twitch.tv/lsac_bucuresti">
+                    <img src="twitch2.png">
+                </a>
+                <a href="https://www.facebook.com/LsacBucuresti/">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.01168 0.579712C2.66199 0.579712 0.77002 2.4801 0.77002 4.84024V19.6525C0.77002 22.0127 2.66199 23.9131 5.01168 23.9131H13.0043V14.7912H10.6029V11.507H13.0043V8.70118C13.0043 6.49677 14.4231 4.47274 17.6916 4.47274C19.015 4.47274 19.9936 4.60035 19.9936 4.60035L19.9166 7.66724C19.9166 7.66724 18.9186 7.65776 17.8296 7.65776C16.6509 7.65776 16.4619 8.20325 16.4619 9.10882V11.507H20.0103L19.8556 14.7912H16.4619V23.9131H19.7584C22.1081 23.9131 24 22.0127 24 19.6526V4.84026C24 2.48012 22.1081 0.579735 19.7584 0.579735H5.01166L5.01168 0.579712Z" fill="white"/>
+                </svg>
+                </a>
+            </div>
+            <p class="footer-copyright">Copyright 2022 | La muncă, nu la întins mâna.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
